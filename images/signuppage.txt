@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#783200",
+              "surface-bright": "#faf9f8",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#00422b",
+              "on-error": "#ffffff",
+              "secondary": "#9d4300",
+              "error": "#ba1a1a",
+              "on-secondary-fixed": "#341100",
+              "surface-container-high": "#e9e8e7",
+              "secondary-container": "#fd761a",
+              "primary-container": "#10b981",
+              "background": "#faf9f8",
+              "on-surface": "#1a1c1c",
+              "primary-fixed": "#6ffbbe",
+              "outline": "#6c7a71",
+              "on-surface-variant": "#3c4a42",
+              "surface-container": "#eeeeed",
+              "inverse-surface": "#2f3130",
+              "surface": "#faf9f8",
+              "primary": "#006c49",
+              "on-tertiary-fixed-variant": "#842225",
+              "on-primary": "#ffffff",
+              "on-primary-fixed": "#002113",
+              "surface-container-low": "#f4f3f2",
+              "on-primary-fixed-variant": "#005236",
+              "on-background": "#1a1c1c",
+              "surface-variant": "#e3e2e1",
+              "secondary-fixed-dim": "#ffb690",
+              "on-tertiary-container": "#711419",
+              "on-secondary-container": "#5c2400",
+              "tertiary-fixed-dim": "#ffb3af",
+              "surface-dim": "#dadad9",
+              "outline-variant": "#bbcabf",
+              "inverse-primary": "#4edea3",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "secondary-fixed": "#ffdbca",
+              "tertiary": "#a43a3a",
+              "tertiary-container": "#fc7c78",
+              "surface-container-highest": "#e3e2e1",
+              "on-tertiary-fixed": "#410005",
+              "surface-tint": "#006c49",
+              "primary-fixed-dim": "#4edea3",
+              "inverse-on-surface": "#f1f0f0",
+              "tertiary-fixed": "#ffdad7"
+            },
+            fontFamily: {
+              "headline": ["Lexend"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-lexend { font-family: 'Lexend', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .cloud-shadow {
+            box-shadow: 0 16px 32px rgba(26, 28, 28, 0.04);
+        }
+        .btn-gradient {
+            background: linear-gradient(135deg, #006c49 0%, #10b981 100%);
+        }
+        .editorial-offset {
+            margin-left: 2rem;
+            margin-right: 1rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- Top Navigation Anchor (Shared Component Suppression Logic: Hidden for Sign-up) -->
+<!-- Content starts here -->
+<main class="flex-grow flex items-center justify-center px-6 py-12 lg:py-24 relative overflow-hidden">
+<!-- Organic Background Elements (Asymmetric Layout) -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-[100px]"></div>
+<div class="absolute top-1/2 -left-32 w-80 h-80 bg-secondary-container/5 rounded-full blur-[80px]"></div>
+<div class="w-full max-w-lg z-10">
+<!-- Welcoming Header (Editorial Style) -->
+<header class="mb-12 editorial-offset">
+<div class="inline-flex items-center gap-2 mb-6">
+<span class="w-12 h-1 bg-primary rounded-full"></span>
+<span class="text-primary font-lexend font-bold tracking-widest text-xs uppercase">Join The Movement</span>
+</div>
+<h1 class="font-lexend text-5xl lg:text-6xl font-bold text-on-surface leading-[1.1] mb-4">
+                    The Living <span class="text-primary">Larder</span>
+</h1>
+<p class="font-body text-on-surface-variant text-lg max-w-xs leading-relaxed">
+                    Share more, waste less. Begin your journey toward a sustainable pantry.
+                </p>
+</header>
+<!-- Signup Form Container -->
+<section class="space-y-8">
+<div class="space-y-4">
+<!-- Name Field -->
+<div class="group">
+<label class="block font-lexend text-sm font-medium text-on-surface-variant ml-6 mb-2">Full Name</label>
+<div class="relative">
+<input class="w-full h-16 px-8 bg-surface-container-low border-none rounded-lg font-body text-on-surface placeholder:text-outline-variant focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all duration-300" placeholder="John Appleseed" type="text"/>
+</div>
+</div>
+<!-- Email Field -->
+<div class="group">
+<label class="block font-lexend text-sm font-medium text-on-surface-variant ml-6 mb-2">Email Address</label>
+<div class="relative">
+<input class="w-full h-16 px-8 bg-surface-container-low border-none rounded-lg font-body text-on-surface placeholder:text-outline-variant focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all duration-300" placeholder="hello@livinglarder.com" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="group">
+<label class="block font-lexend text-sm font-medium text-on-surface-variant ml-6 mb-2">Password</label>
+<div class="relative">
+<input class="w-full h-16 px-8 bg-surface-container-low border-none rounded-lg font-body text-on-surface placeholder:text-outline-variant focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all duration-300" placeholder="••••••••" type="password"/>
+<button class="absolute right-6 top-1/2 -translate-y-1/2 text-outline-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full h-16 rounded-xl btn-gradient text-on-primary font-lexend font-bold text-lg cloud-shadow hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                    Create Account
+                </button>
+<!-- Social Logins (Bento Grid Style) -->
+<div class="pt-4">
+<div class="flex items-center gap-4 mb-8">
+<div class="h-[1px] flex-grow bg-surface-container-highest"></div>
+<span class="font-lexend text-xs font-semibold text-outline-variant tracking-widest uppercase">Or Join With</span>
+<div class="h-[1px] flex-grow bg-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-3 h-14 bg-glass rounded-lg border border-white/20 cloud-shadow hover:bg-surface-container-lowest transition-all duration-300 group">
+<img alt="Google" class="w-5 h-5" data-alt="Official Google logo with vibrant red blue yellow and green segments in a clean vector style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnvibh5lTrXbxUgV93GxV2Q-8JjLUChOejmeLratdfXAeD-4CLmjevDA9FOBkfrf-lrp8jA9Sq3ndNC_V5wF53JTop4lhAMk9CUP9Ly4IzXMZa9Oy9I6Nx3Szyh2pSw_WS18YLobUzysv_lVEwttQy-Fv-qB576NRDbaKlqcBnQeYWA1PI8j4g_4_KiD0O7hv5nOB0IIXDogVQfrGRo7zuvuHyh_cdtm541YLICDkPzAlclre_1tEyEv6hG6ILkaNVwtPeFmSa9g"/>
+<span class="font-lexend font-medium text-on-surface">Google</span>
+</button>
+<button class="flex items-center justify-center gap-3 h-14 bg-glass rounded-lg border border-white/20 cloud-shadow hover:bg-surface-container-lowest transition-all duration-300">
+<span class="material-symbols-outlined text-on-surface" data-icon="apple" style="font-variation-settings: 'FILL' 1;">ios</span>
+<span class="font-lexend font-medium text-on-surface">Apple</span>
+</button>
+</div>
+</div>
+<p class="text-center font-body text-on-surface-variant text-sm mt-8">
+                    Already have an account? 
+                    <a class="text-primary font-bold hover:underline underline-offset-4 ml-1" href="#">Log In</a>
+</p>
+</section>
+</div>
+<!-- Decorative Floating Elements -->
+<div class="hidden xl:block absolute top-1/4 right-20 w-72 h-96 rounded-lg overflow-hidden cloud-shadow rotate-3 scale-110">
+<img class="w-full h-full object-cover" data-alt="close-up of vibrant fresh organic vegetables in a rustic wooden basket with soft daylight and editorial composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeolUG22M2tYqEg9O7RRpM3-cKksHA1WVzsnL1RPA8MPltBiliyHWAKC8u6xtHEFZhK0BztAMqUA7NM77QVzJYOLRYMOAoSzGzu_JtRK_FVN0sLiO2qBcXmj-uCNf3oInF6zKYHZvtO76tkTF2JKeaQCXrqqcYuPwI7Q2Ql3XgEWR4K3aqcy-1DdMUj5otvsAVaTU6B1t_dJt2KEyUX4B58T2Hx5VuAJFO06pwQJCmklAr33icKRAppBPMIP14xh2cWmCxqZWMjw"/>
+</div>
+<div class="hidden xl:block absolute bottom-1/4 left-10 w-64 h-80 rounded-lg overflow-hidden cloud-shadow -rotate-6">
+<img class="w-full h-full object-cover" data-alt="minimalist top-down view of artisan sourdough loaf and fresh herbs on a clean pearl surface with elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFD-x1sgeqinGGojqwCVg3pGWUERPwaOWnfBxnAqcXMyvMqytxO2NEX0Vbv61FfCtAqC5u7OSt1ixFJjkj2OpaSasDnAnQtkVseU557uEhfwSG8KwxKP7qtOntqO0spL5Jh5UetTiiUFUU8ujCEU1Tq1PJwmosQ7dZBJVbQYuYroAGulZr3OkCiWxOBHp7VfPTSKi038liwMt-xnHU4PRuRCcjBywCqnE2EpoQn_-XM9-zDgAHFVqSdLphNcJakYLdv7_h87aljQ"/>
+</div>
+</main>
+<!-- Footer Space -->
+<footer class="p-8 text-center">
+<p class="font-lexend text-[10px] uppercase tracking-[0.2em] text-outline-variant">
+            © 2024 The Living Larder. Premium Community Sustainability.
+        </p>
+</footer>
+</body></html>
