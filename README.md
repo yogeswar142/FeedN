@@ -9,9 +9,9 @@ This project was conceptualized and developed within **24 hours** during the **T
 
 ### 👥 Team Members
 - **Yogeswar** ([@yogeswar142](https://github.com/yogeswar142))
-- [Teammate Name 1]
-- [Teammate Name 2]
-- [Teammate Name 3]
+- **Ganne Rohan** ([@GanneRohan097](https://github.com/GanneRohan097))
+- Deepak D
+- M Tanooj KUmar
 
 ---
 
