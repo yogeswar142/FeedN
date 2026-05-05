@@ -10,6 +10,7 @@ This project was conceptualized and developed within **24 hours** during the **T
 ### 👥 Team Members
 - **Yogeswar** ([@yogeswar142](https://github.com/yogeswar142))
 - **Ganne Rohan** ([@GanneRohan097](https://github.com/GanneRohan097))
+- Harish Naidu ([@GanneRohan097](https://github.com/HARISH-BN890))
 - Deepak D
 - M Tanooj KUmar
 
